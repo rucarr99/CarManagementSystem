@@ -25,25 +25,6 @@
                 <Setter Property="HorizontalAlignment" Value="Center"/>
             </Style>
 
-            <Style TargetType="StackPanel" x:Key="PrimaryStackPanelLogin">
-                <Setter Property="Margin" Value="10"/>
-                <Setter Property="Orientation" Value="Horizontal"/>
-            </Style>
-
-            <Style TargetType="StackPanel" x:Key="PrimaryStackPanelRegister">
-                <Setter Property="Margin" Value="5 2.5"/>
-                <Setter Property="Orientation" Value="Horizontal"/>
-            </Style>
-
-            <Style TargetType="TextBox" x:Key="TextBoxField">
-                <Setter Property="Margin" Value="10 0"/>
-                <Setter Property="Width" Value="250"/>
-                <Setter Property="Foreground" Value="AliceBlue"/>
-                <Setter Property="BorderBrush" Value="AliceBlue"/>
-                <Setter Property="CaretBrush" Value="AliceBlue"/>
-                <Setter Property="SelectionBrush" Value="AliceBlue"/>
-            </Style>
-
 
             <Style TargetType="TextBlock" x:Key="MainMessage">
                 <Setter Property="Margin" Value="20 40"/>
@@ -64,15 +45,6 @@
                 <Setter Property="FontSize" Value="20"/>
             </Style>
 
-            <!--style homepage admin-->
-
-            <Style TargetType="TextBox" x:Key="SearchBoxStyle">
-                <Setter Property="Width" Value="400"/>
-                <Setter Property="Height" Value="40"/>
-                <Setter Property="FontSize" Value="15"/>
-                <Setter Property="VerticalContentAlignment" Value="Center"/>
-                <Setter Property="Margin" Value="10, 0, 20, 0"/>
-            </Style>
 
             <Style TargetType="TextBlock" x:Key="TitleStyle">
                 <Setter Property="HorizontalAlignment" Value="Center"/>
@@ -142,13 +114,8 @@
                 </Setter>
             </Style>
 
-            <Style TargetType="Expander" x:Key="ExpanderStyle">
-                <Setter Property="Foreground" Value="#fafafa"/>
-                <Setter Property="FontSize" Value="20"/>
-                <Setter Property="HorizontalAlignment" Value="Center"/>
-            </Style>
 
-            <Style TargetType="Button"  BasedOn="{StaticResource MaterialDesignRaisedButton}" x:Key="OptionAdminBtnStyle">
+            <Style TargetType="Button"  BasedOn="{StaticResource MaterialDesignRaisedButton}" x:Key="NavBarButtonStyle">
                 <Setter Property="materialDesign:ButtonAssist.CornerRadius" Value="10"/>
                 <Setter Property="Width" Value="200"/>
                 <Setter Property="Margin" Value="3"/>
@@ -156,15 +123,6 @@
                 <Setter Property="BorderBrush" Value="AliceBlue"/>
 
             </Style>
-
-            <Style TargetType="Button" BasedOn="{StaticResource OptionAdminBtnStyle}" x:Key="SearchBtnStyle">
-                <Setter Property="Width" Value="100"/>
-                <Setter Property="Height" Value="45"/>
-                <Setter Property="Margin" Value="5 20"/>
-                <Setter Property="VerticalAlignment" Value="Top"/>
-            </Style>
-
-            <!-- add book style -->
 
             <Style TargetType="Label" x:Key="LabelStyle">
                 <Setter Property="VerticalContentAlignment" Value="Center"/>
@@ -276,30 +234,6 @@
                 <Setter Property="VerticalAlignment" Value="Center"/>
                 <Setter Property="FontSize" Value="20"/>
                 <Setter Property="FontWeight" Value="Bold"/>
-            </Style>
-
-            <Style TargetType="ComboBox" x:Key="ComboBoxStyle">
-                <Setter Property="VerticalAlignment" Value="Center"/>
-                <Setter Property="HorizontalAlignment" Value="Stretch"/>
-                <Setter Property="VerticalContentAlignment" Value="Center"/>
-                <Setter Property="HorizontalContentAlignment" Value="Left"/>
-                <Setter Property="BorderBrush" Value="#004a7c"/>
-                <Setter Property="BorderThickness" Value="1"/>
-                <Setter Property="Margin" Value="10"/>
-
-            </Style>
-
-
-            <Style TargetType="TextBlock" x:Key="PersonalInfoTextblock">
-                <Setter Property="FontSize" Value="20"/>
-                <Setter Property="Margin" Value="17"/>
-            </Style>
-            <Style TargetType="Label" x:Key="TitleLabel">
-                <Setter Property="FontSize" Value="40"/>
-                <Setter Property="FontWeight" Value="ExtraBold"/>
-                <Setter Property="HorizontalAlignment" Value="Center"/>
-                <Setter Property="Foreground" Value="#005691"/>
-                <Setter Property="Margin" Value="12"/>
             </Style>
         </ResourceDictionary>
     </Application.Resources>

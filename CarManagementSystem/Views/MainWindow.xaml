@@ -10,37 +10,37 @@
         ResizeMode="NoResize">
     <Grid MouseDown="UIElement_OnMouseDown">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="21*"/>
-            <ColumnDefinition Width="379*"/>
+            <ColumnDefinition Width="21*" />
+            <ColumnDefinition Width="379*" />
         </Grid.ColumnDefinitions>
         <Grid.Background>
             <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,1">
-                <GradientStop Color="#8bbdd9" Offset="1"/>
-                <GradientStop Color="#fff" Offset="0"/>
+                <GradientStop Color="#8bbdd9" Offset="1" />
+                <GradientStop Color="#fff" Offset="0" />
             </LinearGradientBrush>
         </Grid.Background>
-        <Border Style="{StaticResource StartupPagesStyle}"  Grid.ColumnSpan="2">
+        <Border Style="{StaticResource StartupPagesStyle}" Grid.ColumnSpan="2">
         </Border>
         <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.Column="1">
             <StackPanel Width="670">
                 <StackPanel Margin="20 40">
-                    <TextBlock Text="Car Management System" Style="{StaticResource MainMessage}"/>
+                    <TextBlock Text="Car Management System" Style="{StaticResource MainMessage}" />
                     <StackPanel Style="{StaticResource PrimaryStackPanel}">
                         <Button Style="{StaticResource GoToPageBtn}"
-                               ToolTip="Login" 
-                               x:Name="BtnLogin"
-                               Click="BtnGoToLogin_OnClick" 
-                               Content="Login"
-                               AutomationProperties.AutomationId="LoginButton"/>
+                                ToolTip="Login"
+                                x:Name="BtnLogin"
+                                Click="BtnGoToLogin_OnClick"
+                                Content="Login" />
                     </StackPanel>
                     <StackPanel Style="{StaticResource PrimaryStackPanel}">
                     </StackPanel>
                 </StackPanel>
             </StackPanel>
             <StackPanel Width="100">
-                <Button Margin="10 10" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}"
+                <Button Margin="10 10" Style="{StaticResource MaterialDesignFloatingActionButton}"
+                        Background="{x:Null}"
                         ToolTip="Close" x:Name="BtnExit" Click="BtnExit_OnClick">
-                    <materialDesign:PackIcon Kind="Close" Foreground="AliceBlue" Width="30" Height="30"/>
+                    <materialDesign:PackIcon Kind="Close" Foreground="AliceBlue" Width="30" Height="30" />
                 </Button>
             </StackPanel>
         </StackPanel>

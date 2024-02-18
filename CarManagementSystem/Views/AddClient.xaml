@@ -8,31 +8,34 @@
         WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize"
         Title="AddClient" Height="450" Width="400">
     <Grid MouseDown="UIElement_OnMouseDown">
-        <Grid Background="#004a7c" >
-            <Grid Margin="10" Background="#e8f1f5" >
+        <Grid Background="#004a7c">
+            <Grid Margin="10" Background="#e8f1f5">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.35*"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="0.35*" />
+                    <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
-                <Label Content="First Name" Style="{StaticResource LabelStyle}"/>
-                <TextBox Grid.Row="0" Grid.Column="1"   TextWrapping="Wrap" Style="{StaticResource TextBoxStyle}" x:Name="FirstName" AutomationProperties.AutomationId="PublisherId" />
-                <Label Grid.Row="1" Grid.Column="0" Content="Last Name" Style="{StaticResource LabelStyle}"/>
-                <TextBox Grid.Row="1" Grid.Column="1"  Style="{StaticResource TextBoxStyle}" x:Name="LastName" AutomationProperties.AutomationId="TitleId" />
-                <Label Grid.Row="3" Grid.Column="0" Content="Email" Style="{StaticResource LabelStyle}"/>
-                <TextBox Grid.Row="3" Grid.Column="1"  TextWrapping="Wrap"  Style="{StaticResource TextBoxStyle}" x:Name="Email" AutomationProperties.AutomationId="AuthorId"/>
-                <Label Grid.Row="2" Grid.Column="0" Content="Phone Number" Style="{StaticResource LabelStyle}"/>
-                <TextBox Grid.Row="2" Grid.Column="1"  Style="{StaticResource TextBoxStyle}" x:Name="PhoneNumber" AutomationProperties.AutomationId="IsbnId" />
+                <Label Content="First Name" Style="{StaticResource LabelStyle}" />
+                <TextBox Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" Style="{StaticResource TextBoxStyle}"
+                         x:Name="FirstName" />
+                <Label Grid.Row="1" Grid.Column="0" Content="Last Name" Style="{StaticResource LabelStyle}" />
+                <TextBox Grid.Row="1" Grid.Column="1" Style="{StaticResource TextBoxStyle}" x:Name="LastName" />
+                <Label Grid.Row="3" Grid.Column="0" Content="Email" Style="{StaticResource LabelStyle}" />
+                <TextBox Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" Style="{StaticResource TextBoxStyle}"
+                         x:Name="Email" />
+                <Label Grid.Row="2" Grid.Column="0" Content="P. Number" Style="{StaticResource LabelStyle}" />
+                <TextBox Grid.Row="2" Grid.Column="1" Style="{StaticResource TextBoxStyle}" x:Name="PhoneNumber" />
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="4" Grid.ColumnSpan="2"
                             Grid.Column="0">
-                    <Button Content="Save" Style="{StaticResource MainActionBtnStyle}" Click="ButtonSave_OnClick" AutomationProperties.AutomationId="SaveButton"  />
-                    <Button Content="Cancel"  Style="{StaticResource SecondaryActionBtnStyle}" x:Name="CancelBtn" Click="CancelBtn_OnClick" />
+                    <Button Content="Save" Style="{StaticResource MainActionBtnStyle}" Click="ButtonSave_OnClick" />
+                    <Button Content="Cancel" Style="{StaticResource SecondaryActionBtnStyle}" x:Name="CancelBtn"
+                            Click="CancelBtn_OnClick" />
                 </StackPanel>
             </Grid>
         </Grid>

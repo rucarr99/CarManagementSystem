@@ -3,6 +3,8 @@ using System.ServiceModel;
 
 namespace CarManagementSystem.ViewModels
 {
+    //TODO 
+    //Add fluentValidation
     public class ClientViewModel : ViewModelBase
     {
         public string FirstName { get; set; } = string.Empty;

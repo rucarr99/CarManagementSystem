@@ -26,20 +26,20 @@
             <TextBlock Text="Car Management System" Style="{StaticResource TitleStyle}" Margin="0,20,0,20" />
             <StackPanel Grid.Row="1">
                 <Button x:Name="ProfileBtn" Content="View Cars"
-                        Style="{StaticResource OptionAdminBtnStyle}"
+                        Style="{StaticResource NavBarButtonStyle}"
                         Click="ViewCarsBtn_OnClick" />
                 <Button x:Name="ViewBookBtn" Content="View Clients"
-                        Style="{StaticResource OptionAdminBtnStyle}"
+                        Style="{StaticResource NavBarButtonStyle}"
                         Click="ViewClientsBtn_OnClick">
                 </Button>
             </StackPanel>
             <StackPanel Grid.Row="3" VerticalAlignment="Top" Margin="0,67,0,0">
                 <Button x:Name="HelpBtn" Content="Help"
                         Margin="0 0 0 10"
-                        Style="{StaticResource OptionAdminBtnStyle}" />
+                        Style="{StaticResource NavBarButtonStyle}" />
                 <Button x:Name="LogoutBtn" Content="Logout"
                         Margin="0 0 0 10"
-                        Style="{StaticResource OptionAdminBtnStyle}"
+                        Style="{StaticResource NavBarButtonStyle}"
                         Click="LogoutBtn_OnClick" />
             </StackPanel>
         </Grid>
@@ -53,6 +53,7 @@
                     Background="{x:Null}"
                     HorizontalAlignment="Right"
                     VerticalAlignment="Top"
+                    Click="BtnExit_OnClick"
                     ToolTip="Close" x:Name="BtnExit">
                 <materialDesign:PackIcon Kind="Close" Foreground="#005691" Width="30" Height="30" />
             </Button>

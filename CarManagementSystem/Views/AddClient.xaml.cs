@@ -59,6 +59,9 @@ namespace CarManagementSystem.Views
 
         private void CancelBtn_OnClick(object sender, RoutedEventArgs e)
         {
+            var messageBoxResult =
+                MessageBox.Show("Are you sure?", "Logout confirmation", MessageBoxButton.YesNo);
+            if (messageBoxResult != MessageBoxResult.Yes) return;
             Close();
         }
 

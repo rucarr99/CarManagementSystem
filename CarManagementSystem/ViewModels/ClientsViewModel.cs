@@ -5,6 +5,8 @@ using ServiceReference1;
 
 namespace CarManagementSystem.ViewModels
 {
+    //TODO 
+    //Add fluentValidation
     internal class ClientsViewModel : ViewModelBase
     {
         private ObservableCollection<ClientViewModel> _dataList = new();
